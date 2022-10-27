@@ -39,24 +39,3 @@ const request = (reqType = "get", url, parmas) => {
     })
     
 }
-
-
-//?   /api/standingbook/list
-
-saveMenu({
-    ...params
-}).then(() => {
-    this.$message.success("新增成功!");
-})
-
-export function saveMenu(params) {
-    // axios.get("www.baidu.com", params)
-    // axios.post("www.baidu.com", params)
-    // axios.put("www.baidu.com", params)
-    // axios.delete("www.baidu.com", params)
-
-    request("get", "standingbook/list", params)
-}
-// export saveMenu("getList") {
-//     request("getList")
-// }

@@ -8,7 +8,7 @@ Vue.use(VueRouter);
 
 export const routerMap = [
     {
-        path:"./",
+        path:"/index",
         components: () => import("@/components/HelloWorld")
     }
 
@@ -27,7 +27,7 @@ export const routerMap = [
 //     routes, // `routes: routes` 的缩写
 //   })
 let router = new VueRouter({
-    routers:routerMap
+    routes:routerMap
 });
 
   export default router;

@@ -12,7 +12,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   components: { HelloWorld },
   name: 'App',
- comments:{
+  mounted:{
    HelloWorld
  },
  mounted(){

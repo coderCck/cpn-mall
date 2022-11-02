@@ -3,6 +3,10 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
+const User = {
+    template: '<div>User {{ $route.params.id }}</div>',
+}
+
 
 export const routerMap = [
     {
@@ -17,7 +21,17 @@ export const routerMap = [
         path: "/index",
         name: "index",
         component: () => import('@/components/HelloWorld')
-    }
+    },
+    { 
+        path: '/input',
+        name: "input",
+        component: () => import('@/views/input')
+    },
+    { 
+        path: '/button',
+        name: "button",
+        component: () => import('@/views/button')
+    },
 ]
 
 
